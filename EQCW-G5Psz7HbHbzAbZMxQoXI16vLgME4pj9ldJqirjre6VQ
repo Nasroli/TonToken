@@ -25,7 +25,7 @@ recv_transfer#0x5fb163bd query_id:uint64
 A notification of regular transfer. The receiver contract (e.g. a decentralized exchange) may perform some action based on the `sender`, `amount` and `body` and expected to send a response (with the same `query_id`), carring remaining message value. If such query is bounced, or a `0xffffffff` op returned, token contract processes a rollback.
 ### Confirm_transfer
 ```
-confirm_transfer#0xbc85eb11 query_id:uint64
+confirm_transfer#query_id:
     reciever:MsgAddrSmpl change:Extra body:Any = Response;
 ```
 A confirmation of receiving a transfer notification. The token contract resends `body` and remaining value to the original request sender. Also reciever can return some `change` of token.
