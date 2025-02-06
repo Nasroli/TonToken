@@ -1,4 +1,4 @@
-# Simple token contract
+UQCiQH_FFFe5V12YPqsTTkkt--C4EVSxEsUl_5K0f9RmqI3P# Simple token contract
 The contract essentially proxies token holder requests, parallely updating balances map. In this way, it works similar to transfering extra currency, but with ability to add custom logic on transfers.
 
 It also supports bouncing token transfers (which is useful in DEXes).
